@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JuriUp — Traduza. Analise. Consulte.</title>
+  <meta name="description" content="JuriUp: startup jurídica que traduz o juridiquês, analisa seu contrato e conecta você a advogados trabalhistas.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a class="brand" href="#topo" aria-label="JuriUp - início">
+        <svg class="brand-icon" viewBox="0 0 64 56" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M32 6v40M20 48h24M32 10 8 14M32 10l24 4"/>
+          <path d="M8 14 2 30c0 4 12 4 12 0L8 14ZM56 14l-6 16c0 4 12 4 12 0l-6-16Z"/>
+        </svg>
+        <span class="brand-text"><span class="brand-name">Juri<span>Up</span></span><small>Traduza. Analise. Consulte.</small></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#contratos">Meus Contratos</a></li>
+          <li><a href="#consultas">Consultas</a></li>
+          <li><a href="#sobre">Quem somos</a></li>
+          <li><a href="#plataforma">Plataforma</a></li>
+          <li><a href="#crescimento">Crescimento</a></li>
+        </ul>
+        <a class="btn btn-primary btn-sm" href="#contratos">Novo Contrato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Entenda seus direitos</p>
+          <h1>Seu contrato,<br>mais <em>claro</em>, <em>seguro</em><br>e <em>acessível.</em></h1>
+          <p class="lead">Tradução e análise de contratos com IA jurídica e conexão com advogados recém-formados.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contratos">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a4 4 0 0 1-.5-7.97A5.5 5.5 0 0 1 17 8.5a4.5 4.5 0 0 1 .5 9M12 21v-9m0 0-3 3m3-3 3 3"/></svg>
+              Novo Contrato
+            </a>
+            <a class="btn btn-ghost" href="#assistente">Falar com o Divo</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <p class="bubble">Olá! Eu sou o <strong>Divo</strong>, seu assistente jurídico!</p>
+          <img src="assets/mascote.png" alt="Divo, o robô assistente jurídico da JuriUp, vestindo terno e acenando" width="255" height="282">
+        </div>
+      </div>
+    </section>
+
+    <!-- ANÁLISE DE CONTRATOS -->
+    <section class="section" id="contratos">
+      <div class="container">
+        <div class="card card-light">
+          <div class="card-head">
+            <h2><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5ZM14 3v5h5M9 13h6M9 17h6M9 9h2"/></svg> Análise de Contratos</h2>
+            <a class="link-more" href="#plataforma">Ver todos →</a>
+          </div>
+          <p>Faça o upload do seu contrato e receba:</p>
+
+          <ul class="features">
+            <li>
+              <span class="feat-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h8M8 3v2M5 9c1.5 3 4 5 7 6M11 5c-.5 4-3 8-7 10M13 21l4-10 4 10M14.5 18h5"/></svg></span>
+              Tradução<br>Automática
+            </li>
+            <li>
+              <span class="feat-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20v-6M12 20V6M19 20v-10"/></svg></span>
+              Análise de<br>Cláusulas
+            </li>
+            <li>
+              <span class="feat-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20L12 3ZM12 10v5M12 18v.01"/></svg></span>
+              Alertas de<br>Riscos
+            </li>
+          </ul>
+
+          <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="Arraste seu arquivo aqui ou selecione um arquivo">
+            <svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a4 4 0 0 1-.5-7.97A5.5 5.5 0 0 1 17 8.5a4.5 4.5 0 0 1 .5 9M12 21v-9m0 0-3 3m3-3 3 3"/></svg>
+            <div>
+              <strong>Arraste seu arquivo aqui</strong>
+              <span>ou <u>selecione um arquivo</u></span>
+            </div>
+            <input type="file" id="fileInput" accept=".pdf,.doc,.docx" hidden>
+          </div>
+          <p class="hint">PDF, DOCX, DOC &nbsp;|&nbsp; Até 10MB</p>
+
+          <div class="result" id="result" hidden aria-live="polite">
+            <p class="result-file" id="resultFile"></p>
+            <div class="progress" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+            <div class="result-body" id="resultBody" hidden>
+              <h3>Semáforo de Risco (demonstração)</h3>
+              <ul class="traffic">
+                <li class="t-green"><span></span>Jornada de trabalho e remuneração descritas com clareza.</li>
+                <li class="t-yellow"><span></span>Cláusula de rescisão com termos genéricos — vale revisar.</li>
+                <li class="t-red"><span></span>Possível cláusula abusiva sobre horas extras. Consulte um advogado.</li>
+              </ul>
+              <a class="btn btn-dark btn-sm" href="#consultas">Falar com um advogado</a>
+            </div>
+          </div>
+          <p class="error" id="fileError" role="alert" hidden></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ASSISTENTE DIGITAL -->
+    <section class="section section-tight" id="assistente">
+      <div class="container">
+        <div class="card card-dark assistant">
+          <img src="assets/mascote.png" alt="" width="120" height="133">
+          <div class="assistant-text">
+            <h2>Assistente Digital <span>JuriUp</span></h2>
+            <p>Seu assistente jurídico com IA, pronto para traduzir, analisar e esclarecer seu contrato.</p>
+          </div>
+          <button class="btn btn-primary btn-sm" id="chatOpen" type="button" aria-controls="chat" aria-expanded="false">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg>
+            Conversar
+          </button>
+        </div>
+
+        <div class="chat" id="chat" hidden>
+          <div class="chat-log" id="chatLog" aria-live="polite"></div>
+          <div class="chat-quick" id="chatQuick"></div>
+          <form class="chat-form" id="chatForm" autocomplete="off">
+            <label class="sr-only" for="chatInput">Digite sua dúvida</label>
+            <input type="text" id="chatInput" maxlength="200" placeholder="Digite sua dúvida trabalhista...">
+            <button class="btn btn-primary btn-sm" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSULTA DE ADVOGADOS -->
+    <section class="section section-tight" id="consultas">
+      <div class="container">
+        <div class="card card-light">
+          <div class="card-head">
+            <h2><svg class="ico ico-lg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><circle cx="17" cy="9" r="2.5"/><path d="M2 20c0-3.5 3-6 7-6s7 2.5 7 6M16 14c3 0 6 1.8 6 5"/></svg> Consulta de Advogados</h2>
+            <a class="link-more" href="#consultas">Ver todos →</a>
+          </div>
+          <p>Conecte-se com advogados recém-formados prontos para ajudar.</p>
+
+          <ul class="lawyers" id="lawyers">
+            <li class="lawyer">
+              <div class="avatar"><img src="assets/advogada.png" alt="Foto de Beatriz Mendes" width="128" height="128"><i class="online" title="Online"></i></div>
+              <div class="lawyer-info">
+                <h3>Beatriz Mendes</h3>
+                <p>Advogada (OAB em andamento)</p>
+                <p class="rating"><span aria-hidden="true">★</span> <strong>4.8</strong> (72 avaliações)</p>
+                <ul class="tags"><li>Direito Civil</li><li>Direito Contratual</li><li>Direito Digital</li></ul>
+              </div>
+              <button class="btn btn-dark btn-sm" type="button" data-lawyer="Beatriz Mendes">
+                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg>
+                Conversar
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUEM SOMOS -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Quem somos?</p>
+          <h2>Startup jurídica com o foco em ajudar</h2>
+          <p class="lead">Facilitamos o entendimento dos direitos trabalhistas para quem estiver ingressando no mundo do trabalho.</p>
+        </header>
+
+        <div class="grid-3">
+          <article class="panel">
+            <h3>Público-alvo</h3>
+            <ul class="check">
+              <li>Jovens de 14 a 24 anos</li>
+              <li>Estagiários</li>
+              <li>CLT’s</li>
+            </ul>
+          </article>
+          <article class="panel">
+            <h3>Propostas</h3>
+            <ul class="check">
+              <li>Traduzir “juridiquês” para leigos</li>
+              <li>Facilitar acesso à informação dos direitos trabalhistas</li>
+              <li>Ajudar a identificar irregularidades dentro do contrato</li>
+              <li>Acesso direto a advogados trabalhistas</li>
+            </ul>
+          </article>
+          <article class="panel">
+            <h3>Diferenciais</h3>
+            <ol class="numbered">
+              <li>Consulta com profissionais especializados na área</li>
+              <li>Acessibilidade</li>
+              <li>Parceria com Agentes de Estágio/Aprendizagem</li>
+            </ol>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLATAFORMA -->
+    <section class="section section-alt" id="plataforma">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Plataforma JuriUp</p>
+          <h2>Tudo o que você precisa em um só lugar</h2>
+        </header>
+        <div class="grid-4">
+          <article class="tile"><span class="tile-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg></span><h3>Intuitivo</h3><p>Navegação simples, pensada para quem nunca leu um contrato.</p></article>
+          <article class="tile"><span class="tile-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg></span><h3>Consulta com advogados</h3><p>Acesso direto a profissionais para tirar dúvidas.</p></article>
+          <article class="tile"><span class="tile-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5ZM14 3v5h5M9 13h6M9 17h6"/></svg></span><h3>Análise de contrato</h3><p>Cláusulas explicadas e riscos sinalizados automaticamente.</p></article>
+          <article class="tile"><span class="tile-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="7" width="14" height="11" rx="3"/><path d="M12 7V4M9 12v1M15 12v1"/></svg></span><h3>Assistente Digital</h3><p>O Divo responde suas perguntas com linguagem simples.</p></article>
+        </div>
+
+        <h3 class="sub-title">Canais de distribuição</h3>
+        <div class="grid-3">
+          <article class="panel">
+            <span class="badge">Bot de WhatsApp / Telegram</span>
+            <p>Envio do PDF do contrato e resumo em tópicos ou por áudio.</p>
+          </article>
+          <article class="panel">
+            <span class="badge">Widget in app</span>
+            <p>Botão de ajuda embutido dentro de apps de bancos.</p>
+          </article>
+          <article class="panel">
+            <span class="badge">Extensão de navegador</span>
+            <p>Grifo inteligente de parágrafos confusos e um “Semáforo de Risco” para PDFs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CRESCIMENTO -->
+    <section class="section" id="crescimento">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Crescimento</p>
+          <h2>Ganhos x Gastos (2026–2030)</h2>
+          <p class="lead">Projeção ilustrativa de evolução financeira da JuriUp.</p>
+        </header>
+        <div class="panel chart-panel">
+          <div class="legend"><span class="lg lg-gain">Ganhos</span><span class="lg lg-cost">Gastos</span></div>
+          <div class="chart" id="chart" role="img" aria-label="Gráfico de barras com ganhos e gastos de 2026 a 2030"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section-tight">
+      <div class="container">
+        <div class="card card-dark cta">
+          <h2>Entenda seus direitos antes de assinar.</h2>
+          <p>Traga seu contrato e deixe o JuriUp traduzir, analisar e conectar você a quem pode ajudar.</p>
+          <a class="btn btn-primary" href="#contratos">Começar agora</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="assets/logo.png" alt="Logo JuriUp Startup" width="72" height="82">
+      <p>© <span id="ano">2026</span> JuriUp Startup. Entenda seus direitos.</p>
+      <p class="disclaimer">As análises exibidas são demonstrativas e não substituem a orientação de um advogado.</p>
+    </div>
+  </footer>
+
+  <!-- Navegação inferior (mobile) -->
+  <nav class="bottom-nav" aria-label="Navegação rápida">
+    <a href="#inicio" class="active"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 3l9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9Z"/></svg>Início</a>
+    <a href="#contratos"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M7 21h10M12 6 4 8M12 6l8 2M4 8l-2 7c0 2 6 2 6 0L4 8ZM20 8l-2 7c0 2 6 2 6 0L20 8Z"/></svg>Meus Contratos</a>
+    <a href="#consultas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg>Consultas</a>
+    <a href="#sobre"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg>Sobre</a>
+  </nav>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
